@@ -1,0 +1,181 @@
+
+*{
+    font-family: 'Kanit', sans-serif;
+    padding: 0;
+    margin: 0;
+    color: inherit;
+    box-sizing: border-box;
+}
+html{
+    background-color: #ffffff;
+    height: 100%;
+}
+
+body{
+    margin: 5px;
+    min-height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+}
+
+body#planos{
+    position: relative;
+}
+
+footer.planosRodape{
+    position: relative;
+    bottom: 0;
+}
+
+.caixa{
+    background-color: white;
+    color: black;
+    width: 200px;
+    height: 320px;
+    margin: 5px;
+    padding: 8px;
+    border-radius: 10px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* MARGIN PARA AFASTAR CONTEUDO DO BODY DO RODAPE, SEM ESSA MARGIN
+O RODAPE SOBREPOE OS CONTEUDOS DO BODY EM ALGUNS BREAKPOINTS*/
+
+
+/************** seleção pagina atual *******************/
+#inicio .inicio, #planos .planos{
+    background-color: black;
+    color: white;
+}
+
+#inicio .inicio:hover, #planos .planos:hover{
+    background-color:rgb(248, 244, 6);
+    color: black;
+}
+
+
+header .navbar-nav .nav-link{
+    width: 100px;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    border-radius: 5px;
+    padding: 2px;
+    margin-left: 5px ;
+}
+
+
+.banner{
+    background: url('../img/banner.jpg') no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+
+.banner h2{
+    color: white;
+}
+
+.contain-caixa h2{
+    background-color: black;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.banner p{
+    font-size: 0.8rem;
+}
+
+.h100{
+    max-height: 100% ;
+}
+
+.tamanho{
+    height: 300px;
+}
+
+.insta{
+    color: rgb(252, 122, 35);
+}
+
+.zap{
+    color: rgb(22, 202, 22);
+}
+
+/* DESIGN MOBILE */
+@media (max-width: 576.9px){
+    
+    body{
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    header .navbar-nav{
+        width: 100%;
+    }
+
+    header .navbar-nav .nav-item .nav-link{
+        color: black;
+        width: 100%;
+        border-color: white;
+        border-radius: 5px;
+        margin-top: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    header .navbar-nav .nav-link:hover{
+        background-color: black;
+        color: white;
+        border: none;
+    }
+    .btnM{
+        background-color: black;
+        padding: 10px;
+        color: white;
+    }
+
+    .btnM:hover{
+        background-color: white;
+        border: 1px solid black;
+        color: black;
+    }
+
+    .tamanho{
+        height: 270px;
+        width: 85%;
+        border-radius: 10px;
+    }
+
+    #links .navbar-nav{
+        flex-direction: row;
+    }
+
+    #links .navbar-nav .nav-item{
+        padding-left: 20px;
+    }
+
+}
+
+/* BREAKPOINT PARA MUDAR COR DO BOTAO BANNER*/
+@media (min-width: 577px) and (max-width:840px){
+    .btnCust{
+        background-color: white;
+        color: black;
+        border: 2px solid black;
+        font-weight: bold;
+    }
+
+    .btnCust:hover{
+        background-color: darkgoldenrod;
+        color: white;
+        border: 2px solid white;
+    }
+}
